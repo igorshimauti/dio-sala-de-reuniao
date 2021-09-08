@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title>Atualizar sala</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput name="nome" placeholder="Nome" [(ngModel)]="sala.nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="data" placeholder="Data" [(ngModel)]="sala.data">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="horaInicio" placeholder="Hora início" [(ngModel)]="sala.horaInicio">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="horaFim" placeholder="Hora fim" [(ngModel)]="sala.horaFim">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="update()" color="primary">
+        Salvar
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
